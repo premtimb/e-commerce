@@ -9,8 +9,6 @@ export function DeliveryOptions({cartItem, deliveryOptions, loadCart}) {
                 Choose a delivery option:
             </div>
             {deliveryOptions.map((deliveryOption) => {
-                console.log('deliveryOption:', deliveryOption);
-                console.log('priceCents:', deliveryOption.priceCents, typeof deliveryOption.priceCents);
                 let priceString = 'FREE Shipping';
 
                 if (deliveryOption.priceCents > 0) {
